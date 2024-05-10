@@ -30,7 +30,8 @@ namespace Fundamentals
             {
                 Calculation obj = new Calculation(CustomMath.Addition);
                 obj.Invoke(6, 9); // or obj(6, 9)
-                obj.Invoke(6, 10);
+            obj = CustomMath.Divide;    
+            obj.Invoke(10, 2);
             }
        
 
