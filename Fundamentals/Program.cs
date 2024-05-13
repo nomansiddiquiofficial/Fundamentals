@@ -24,20 +24,35 @@ namespace Fundamentals
         //    // Console.WriteLine(result);
 
 
-          // Delegates 
-      
-            static void Main(string[] args)
-            {
-                Calculation obj = new Calculation(CustomMath.Addition);
-                obj.Invoke(6, 9); // or obj(6, 9)
-            obj = CustomMath.Divide;    
-            obj.Invoke(10, 2);
-            }
-       
+        // Delegates 
 
+        //static void Main(string[] args)
+        //{
+        //    Calculation obj = new Calculation(CustomMath.Addition);
+        //    obj.Invoke(6, 9); // or obj(6, 9)
+        //obj = CustomMath.Divide;    
+        //obj.Invoke(10, 2);
+        //}
+
+
+        static void Main(string[] args)
+        {
+            Properties properties = new Properties();
+           // properties.Name = "noman";
+            //Console.WriteLine(properties.Name);
+            PreDefinedProperties preDefinedProperties = new PreDefinedProperties("NomanS", 3);
+           // preDefinedProperties.SetEmpName("NOman");
+            Console.WriteLine(preDefinedProperties.EmpName);
+            Console.WriteLine(preDefinedProperties.EmpId);
+        
+            Console.WriteLine(preDefinedProperties.EmpExists);
+
+
+
+        }
 
 
     }
 
-    
+
 }
